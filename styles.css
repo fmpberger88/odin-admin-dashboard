@@ -26,8 +26,11 @@ body {
 
 header {
     grid-area: header;
-    background-color: steelblue;
     padding: 10px;
+}
+
+header p {
+    font-weight: bold;
 }
 
 .headerSection {
@@ -49,19 +52,47 @@ header {
     min-width: 500px;
 }
 
-.hiThere {
+#userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#litteProfileImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#mainProfileImg {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.hiThereContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+#hiThere {
+    font-size: 0.75rem;
 }
 
 button {
-    background-color: #172554;
+    background-color: #075985;
     border: none;
     border-radius: 20px;
     color: white;
     padding: 10px 20px;
     cursor: pointer;
     margin: 5px;
+    font-weight: bold;
 }
 
 main {
