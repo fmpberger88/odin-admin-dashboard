@@ -117,8 +117,12 @@ aside div {
 }
 
 aside div h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
     color: white;
+    gap: 3px;
 }
 
 aside nav div ul {
