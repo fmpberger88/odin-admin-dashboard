@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    display: grid;
+    border: 1px black solid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas:
+    "aside header header header header"
+    "aside header header header header"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main";
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: steelblue;
+    padding: 10px;
+}
+
+.headerSection {
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerSection div {
+    display: flex;
+}
+
+#search {
+    border: none;
+    border-radius: 20px;
+    background-color: lightgray;
+    padding: 5px;
+    min-width: 500px;
+}
+
+.hiThere {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #172554;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+main {
+    grid-area: main;
+    background-color: rosybrown;
+    padding: 10px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #075985;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 15px;
+}
+
+aside div {
+    margin-left: 30px;
+}
+
+aside div h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+aside nav div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+    padding: 40px 0;
+}
+
+aside nav div ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+}
