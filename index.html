@@ -14,13 +14,14 @@
 <body>
     <header>
         <div class="headerSection">
-            <div>
+            <div style="display: flex; gap: 10px; justify-content: center; align-items: center">
+                <img src="icons/magnify.svg" alt="Search Icon" style="height: 24px;">
                 <input type="text" id="search" name="search" placeholder="Search...">
             </div>
             <div id="userInfo">
-                <p>Alert</p>
+                <img src="icons/bell-ring-outline.svg" alt="Bell Icon" style="height: 24px">
                 <img src="images/fmpberger.webp" id="litteProfileImg" alt="profile image">
-                <p>User Name</p>
+                <p>Fabian Berger</p>
             </div>
         </div>
         <div class="headerSection">
@@ -30,7 +31,7 @@
                 </div>
                 <div class="hiThereContainer">
                     <p id="hiThere">Hi there,</p>
-                    <p>User Name <span>(@user)</span></p>
+                    <p>Fabian Berger <span>(@fmpberger)</span></p>
                 </div>
             </div>
             <div>
@@ -46,27 +47,57 @@
     <aside>
         <div>
             <h1>
-                <img src="icons/view-dashboard.svg" alt="Dashboard Icon" style="height:32px; color: white";>
+                <img src="icons/view-dashboard.svg" alt="Dashboard Icon" style="height:32px;">
                 Dashboard
             </h1>
         </div>
         <nav>
             <div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Messages</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#"> Tasks</a></li>
-                    <li><a href="#">Communities</a></li>
+                    <li>
+                        <img src="icons/home.svg" alt="Home Icon">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <img src="icons/card-account-details-outline.svg" alt="Profile Icon">
+                        <a href="#">Profile</a>
+                    </li>
+                    <li>
+                        <img src="icons/message.svg" alt="Message Icon">
+                        <a href="#">Messages</a>
+                    </li>
+                    <li>
+                        <img src="icons/clock-time-three.svg" alt="History icon">
+                        <a href="#">History</a>
+                    </li>
+                    <li>
+                        <img src="icons/calendar-check-outline.svg" alt="Task Icon">
+                        <a href="#"> Tasks</a>
+                    </li>
+                    <li>
+                        <img src="icons/account-group.svg" alt="Communities Icon">
+                        <a href="#">Communities</a>
+                    </li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li>
+                        <img src="icons/cog-outline.svg" alt="Settings Icon">
+                        <a href="#">Settings</a>
+                    </li>
+                    <li>
+                        <img src="icons/help-circle-outline.svg" alt="Support Icon">
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <img src="icons/shield-lock.svg" alt="Privacy Icon">
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                        <img src="icons/logout.svg" alt="Logout Icon">
+                        <a href="#">Logout</a>
+                    </li>
                 </ul>
             </div>
         </nav>
