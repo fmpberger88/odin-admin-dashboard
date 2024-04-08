@@ -12,7 +12,8 @@ body {
     grid-template-rows: repeat(10, 1fr);
     grid-template-areas:
     "aside header header header header"
-    "aside header header header header"
+    "aside main main main main"
+    "aside main main main main"
     "aside main main main main"
     "aside main main main main"
     "aside main main main main"
@@ -26,6 +27,9 @@ body {
 header {
     grid-area: header;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header p {
@@ -103,6 +107,12 @@ main {
     gap: 20px;
 }
 
+.projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .projectCards {
     display: flex;
     flex-direction: column;
@@ -111,8 +121,8 @@ main {
     background-color: white;
     border-left: 8px solid goldenrod;
     border-radius: 10px;
-    height: 300px;
-    width: 400px;
+    height: 350px;
+    width: 40%;
 }
 
 .projectCards div h3 {
@@ -144,7 +154,11 @@ aside {
     padding: 15px;
 }
 
-aside div {
+aside section {
+    position: fixed;
+}
+
+aside section div {
     margin-left: 30px;
 }
 
