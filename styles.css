@@ -21,7 +21,6 @@ body {
     "aside main main main main"
     "aside main main main main"
     "aside main main main main";
-    height: 100vh;
 }
 
 header {
@@ -99,6 +98,39 @@ main {
     grid-area: main;
     background-color: rosybrown;
     padding: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.projectCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+    border-left: 8px solid goldenrod;
+    border-radius: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+.projectCards div h3 {
+    margin: 10px
+}
+
+.projectCards div p {
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.cardIconsContainer {
+    align-self: flex-end;
+}
+
+.cardIcons {
+    height: 24px;
+    margin-left: 5px;
 }
 
 aside {
