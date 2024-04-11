@@ -5,6 +5,14 @@
     font-family: Verdana, sans-serif;
 }
 
+p {
+    line-height: 1.5em;
+}
+
+hr {
+    margin-top: 0.75rem;
+}
+
 body {
     display: grid;
     border: 1px black solid;
@@ -61,9 +69,9 @@ header p {
     gap: 10px;
 }
 
-#litteProfileImg {
-    width: 30px;
-    height: 30px;
+.litteProfileImg {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -100,17 +108,29 @@ button {
 
 main {
     grid-area: main;
-    background-color: rosybrown;
-    padding: 10px;
+    background-color: lightgray;
+    padding: 20px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
 }
 
+.mainContainer {
+    margin-top: 20px
+}
+
+.mainTitle {
+    margin-bottom: 20px;
+}
+
+.mainAsideContainer {
+    margin-top: 65px
+}
+
 .projectsContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
 }
 
 .projectCards {
@@ -121,8 +141,8 @@ main {
     background-color: white;
     border-left: 8px solid goldenrod;
     border-radius: 10px;
-    height: 350px;
-    width: 40%;
+    height: 320px;
+    width: 45%;
 }
 
 .projectCards div h3 {
@@ -141,6 +161,42 @@ main {
 .cardIcons {
     height: 24px;
     margin-left: 5px;
+}
+
+.announcementsCard {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5px;
+    gap: 10px;
+}
+
+.announcementsCard h3 {
+    font-size: 1rem;
+    margin-top: 10px;;
+}
+
+.trending {
+    margin-top: 35px;
+}
+
+.trendUser {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.trendProject {
+    font-size: 0.8rem;
+}
+
+
+.trendingPost {
+    display: flex;
+    margin: 20px 0;
+    gap: 10px;
+    align-items: center;
 }
 
 aside {
